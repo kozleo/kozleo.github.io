@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: welcome to leo's page
 description: okay
+
+permalink: /blog/:year/:month/:day/:title
