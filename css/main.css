@@ -45,9 +45,12 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    font-size: 1.7rem;
 }
 
 .MathJax {
-font-size: 3rem;
+    font-size: 3rem;
+}
+
+li {
+    font-size: 1.7rem;
 }
