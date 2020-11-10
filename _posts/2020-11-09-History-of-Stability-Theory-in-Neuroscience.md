@@ -1,11 +1,12 @@
 ## Brief History of Stability Theory
 
-Year 100 B.C
+### Year 100 B.C
+
 Aristole reaches down and took a fistful of dirt from the ground. Standing back up, he holds his fist in front of young Alexander the Great's face for a moment before opening his hand and letting the dirt fall to the Earth. 
 
 "You see Alexander? The dirt falls to the ground because it is made of the same substance. Just as water will seek the ocean downstream. Just as fire will reach for the sun."
 
-Year 2020
+### Year 2020 A.C
 
 The overly-optimistic physics graduate student stands at the whiteboard. Introduction to Physics for the Life Sciences. He clears his throat and starts talking.
 
