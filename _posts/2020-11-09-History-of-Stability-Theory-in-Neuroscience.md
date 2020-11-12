@@ -25,3 +25,17 @@ Looking up from her phone, the girl offers:
 ----
 
 Stability theory has come a long way since Aristole. 
+
+
+
+# Cybernetics 
+Nobert Weiner 
+Ross Ashby 
+
+# Perceptron, Learning Rule Stability 
+
+# Hopfield 
+# Cohen Grossberg
+# SOFM 
+
+# Mante & Sussillo, etc
