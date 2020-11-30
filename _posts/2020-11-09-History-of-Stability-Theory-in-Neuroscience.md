@@ -2,7 +2,7 @@
 
 ### Year 100 B.C
 
-$$\mathbf{x}$$
+
 
 Aristole reaches down and takes a fistful of dirt from the ground. Standing back up, he holds his fist in front of young Alexander the Great's face for a moment before opening his hand and letting the dirt fall.
 
@@ -27,6 +27,11 @@ Looking up from her phone, the girl offers:
 ----
 
 Stability theory has come a long way since Aristole. It is a powerful formal structure for understanding complex dynamical systems. Since it's used by engineers out in the world where the risks are high (e.g building bridges) it is nessesarily a math-heavy, exact theory. In the case of linear dynamical systems, this theory is basically complete. In the case of nonlinear dynamical systems, we have almost no theory at all. Stability theory has played a pivatol, if under-ackonwledged role in the historical development of neuroscience. Although one could start much earlier, our story begins in the early 20th century with the rise of cybernetics. 
+
+
+For fun, I'll try take their old notation and convert it into something modern. Here's an inline formula: $\mathbf{x}$ and here's not:
+
+$$\mathbf{y}$$
 
 
 # Experimental 
