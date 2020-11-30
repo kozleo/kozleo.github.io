@@ -47,8 +47,8 @@ ul.posts li {
     list-style: none;
 }
 
-.MathJax {
-    font-size: 3rem;
+.katex { 
+    font-size: 1.1rem; 
 }
 
 li {
