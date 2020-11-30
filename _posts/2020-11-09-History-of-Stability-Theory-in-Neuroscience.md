@@ -36,6 +36,8 @@ $$\begin{pmatrix}
    c & d
 \end{pmatrix}$$
 
+Now we're cooking with peanut oil boys $$\mathbf{x} = \mathbf{f}(\mathbf{x})$$.
+
 
 # Experimental 
 As soon as people realized neurons were stochastic, they asked how percepts could be stable. 
