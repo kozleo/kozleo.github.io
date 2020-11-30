@@ -19,7 +19,9 @@ To see where these Lyapunov equations comes from, check out this other post.
 
 In this post, we'll see how to go from the contiuous-time to discrete-time Lyapunov equation. I'll present a short derivation based on Taylor expansions. 
 
+$$
 \begin{equation}
 \ddot{\underline{\mathbf{r}}} = \frac{\dd{}{^2}\underline{\mathbf{r}}}{\dd{t}^2} = 0
 \end{equation}
+$$
 
