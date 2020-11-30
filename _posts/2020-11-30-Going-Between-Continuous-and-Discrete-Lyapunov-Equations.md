@@ -9,15 +9,3 @@ $$\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}$$
 
 The reason this equation comes up is because when you take an invertible coordinate transform of the above equation $$\mathbf{z} = \mathbf{\Theta}\mathbf{x}$$ and look at the norm of $$\mathbf{z}$$ you find that
 
-$$\frac{d}{dt}\mathbf{z}^T\mathbf{z} = 2\mathbf{z}^T\frac{d}{dt}\mathbf{z} = 2\mathbf{z}^T\mathbf{\Theta}\mathbf{A}\mathbf{x} = 2\mathbf{x}^T\mathbf{\Theta}^T\mathbf{\Theta}\mathbf{A}\mathbf{x}$$
-
-Now noticing that we can write $$\mathbf{M}= \mathbf{\Theta}^T\mathbf{\Theta}$$ the above simplifies to
-
-$$\frac{d}{dt}\mathbf{z}^T\mathbf{z} = 2\mathbf{x}^T\mathbf{M}\mathbf{A}\mathbf{x} = \mathbf{x}^T(\mathbf{M}\mathbf{A} + \mathbf{A}^T\mathbf{M})\mathbf{x}$$
-
-Lyapunov then declared that if there exists some positive definite symmetric matrix $$\mathbf{Q}$$ such that 
-
-$$\mathbf{M}\mathbf{A} + \mathbf{A}^T\mathbf{M} = -\mathbf{Q}$$
-
-then we would have exponential convergence of $$\mathbf{z} \rightarrow \mathbf{0}$$.
-
