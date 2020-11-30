@@ -9,5 +9,5 @@ $$\dot{\mathbf{x}} = \mathbf{A}\mathbf{x}$$
 
 The reason this equation comes up is because when you take an invertible coordinate transform of the above equation $$\mathbf{z} = \mathbf{\Theta}\mathbf{x}$$ and look at the norm of $$\mathbf{z}$$ you find that
 
-$$\frac{d}{dt}\mathbf{z}^T\mathbf{z} = 2\mathbf{z}^T\frac{d}{dt}\mathbf{z} = 2\mathbf{z}^T\mathbf{\Theta}\mathbf{x} = 2\mathbf{x}^T\mathbf{\Theta}^T\mathbf{\Theta}\mathbf{x}$$
+$$\frac{d}{dt}\mathbf{z}^T\mathbf{z} = 2\mathbf{z}^T\frac{d}{dt}\mathbf{z} = 2\mathbf{z}^T\mathbf{\Theta}\mathbf{A}\mathbf{x} = 2\mathbf{x}^T\mathbf{\Theta}^T\mathbf{\Theta}\mathbf{A}\mathbf{x}$$
 
