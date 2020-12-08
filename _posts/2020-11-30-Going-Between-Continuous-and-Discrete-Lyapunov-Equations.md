@@ -19,9 +19,24 @@ To see where these Lyapunov equations comes from, check out this other post.
 
 In this post, we'll see how to go from the contiuous-time to discrete-time Lyapunov equation. I'll present a short derivation based on Taylor expansions. 
 
+# Here is me typing something
+
+Here is me typing something else. 
+
+
+
+Here's an example of math:
 $$
-\begin{equation}
-\ddot{\underline{\mathbf{r}}} = \frac{\dd{}{^2}\underline{\mathbf{r}}}{\dd{t}^2} = 0
-\end{equation}
+\begin{align*}
+y = y(x,t) &= A e^{i\theta} \\
+&= A (\cos \theta + i \sin \theta) \\
+&= A (\cos(kx - \omega t) + i \sin(kx - \omega t)) \\
+&= A\cos(kx - \omega t) + i A\sin(kx - \omega t)  \\
+&= A\cos \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big) + i A\sin \Big(\frac{2\pi}{\lambda}x - \frac{2\pi v}{\lambda} t \Big)  \\
+&= A\cos \frac{2\pi}{\lambda} (x - v t) + i A\sin \frac{2\pi}{\lambda} (x - v t)
+\end{align*}
 $$
+
+
+
 
