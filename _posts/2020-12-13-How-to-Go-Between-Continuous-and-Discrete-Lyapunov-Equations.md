@@ -32,7 +32,7 @@ Expanding this expression out yields:
 
 $$(\mathbf{M} + \delta \mathbf{A}^T\mathbf{M}) (\mathbf{I} + \delta \mathbf{A}) = \delta(\mathbf{A}^T\mathbf{M} + \mathbf{M}\mathbf{A}) + \delta^2 \mathbf{A}^T\mathbf{M}\mathbf{A} = -\delta \mathbf{Q}$$  
 
-Recall that $\delta$ is a small displacement in time. Letting $\delta$ go to zero brings us closer and closer to having continuous dynamics--and in the limit we achieve them. It stands to reason that we should also recover the continuous-time Lyapunov equations in the limit as well. Dividing through by $\delta$ on both sides, and then letting $\delta \rightarrow 0$ we find that:
+Recall that $$\delta$$ is a small displacement in time. Letting $$\delta$$ go to zero brings us closer and closer to having continuous dynamics--and in the limit we achieve them. It stands to reason that we should also recover the continuous-time Lyapunov equations in the limit as well. Dividing through by $$\delta$$ on both sides, and then letting $$\delta \rightarrow 0$$ we find that:
 
  $$\mathbf{A}^T\mathbf{M} + \mathbf{M}\mathbf{A} = -\mathbf{Q}$$ 
 
