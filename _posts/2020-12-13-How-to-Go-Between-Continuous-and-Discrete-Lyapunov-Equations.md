@@ -38,6 +38,8 @@ Recall that $$\delta$$ is a small displacement in time. Letting $$\delta$$ go to
 
 which of course is the continuous-time Lyapunov equation. 
 
+I've also added this simple proof to the [Wiki page for Lyapunov equations](https://en.wikipedia.org/wiki/Lyapunov_equation#Relationship_Between_Discrete_and_Continuous_Lyapunov_Equations).
+
 
 
 
