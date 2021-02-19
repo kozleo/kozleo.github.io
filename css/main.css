@@ -434,10 +434,12 @@ ul.posts {
 }
 ul.posts li {
     list-style: none;
+
 }
 .katex { 
-    font-size: 2.0em; 
+    font-size: 2.0vw; 
 }
+
 li {
     font-size: 1.7rem;
 }
