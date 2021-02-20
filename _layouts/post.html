@@ -1,17 +1,9 @@
 ---
 layout: default
 ---
-<html>
-  <head>
-    <link rel="stylesheet" media="screen and (min-width: 601px)" href="../css/main_desktop.css" />
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../css/main_mobile.css" />
-  </head>
-  <body>
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date_to_string }}</p>
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
 
-    <div class="post">
-      {{ content }}
-    </div>
-  </body>
-</html>
+<div class="post">
+  {{ content }}
+</div>
