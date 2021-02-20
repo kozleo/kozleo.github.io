@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
