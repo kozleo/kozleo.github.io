@@ -429,13 +429,14 @@ label.margin-toggle:not(.sidenote-number) {
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 3.5vw;
+    font-size: 1.5rem;
 }
 ul.posts li {
     list-style: none;
 
 li {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
     
 // Mobile
