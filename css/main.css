@@ -440,16 +440,8 @@ li {
 }
     
 // Mobile
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     body {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    background-color: #fffff8;
-    color: #111;
-    max-width: 1400px;
-    counter-reset: sidenote-counter;
-}
-
+        width: 90%;
+    }
 }
