@@ -350,9 +350,8 @@ label.margin-toggle:not(.sidenote-number) {
 
 @media (max-width: 760px) {
     body {
-        width: 84%;
-        padding-left: 8%;
-        padding-right: 8%;
+        width: 90%;
+        color: red;
     }
 
     hr,
@@ -437,12 +436,4 @@ ul.posts li {
 li {
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
-}
-    
-// Mobile
-@media screen and (max-width: 500px) {
-    body {
-        width: 90%;
-        color: red;
-    }
 }
