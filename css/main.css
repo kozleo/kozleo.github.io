@@ -443,5 +443,6 @@ li {
 @media screen and (max-width: 500px) {
     body {
         width: 90%;
+        color: red;
     }
 }
