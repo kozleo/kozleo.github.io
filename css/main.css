@@ -9,7 +9,8 @@ body {
     margin-right: auto;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
-    color: #111;
+    #color: #111;
+    color: blue;
     max-width: 1400px;
     counter-reset: sidenote-counter;
 }
@@ -348,7 +349,7 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
-@media (max-width: 760px) {
+@media screen and (max-width: 600px) {
     body {
         width: 90%;
         color: red;
