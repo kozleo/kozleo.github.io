@@ -1,4 +1,4 @@
-I recently found a weird way to integrate the function $$y = tanh(x)$$ only derivatives. 
+I recently found a weird way to integrate the function $$y = tanh(x)$$ only using derivatives. 
 
 Take the first derivative of $\phi = tanh(x)$ with respect to $$x$$:
 
