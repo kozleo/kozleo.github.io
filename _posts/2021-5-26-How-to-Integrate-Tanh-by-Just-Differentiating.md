@@ -12,7 +12,7 @@ The last equality is just the chain rule. Now divide both sides by $$s$$, we get
 
 $$\frac{\dot{s}}{s} = -2 \phi \dot{x}$$
 
-At this point, you have to notice that the left side of this equation is something called the logarithmic derivative of $s$: 
+At this point, you have to notice that the left side of this equation is something called the logarithmic derivative of $$s$$: 
 
 $$\frac{d}{dt}ln(s) = \frac{\dot{s}}{s}$$
 
