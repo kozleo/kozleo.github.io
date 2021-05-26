@@ -16,7 +16,7 @@ At this point, you have to notice that the left side of this equation is somethi
 
 $$\frac{d}{dt}ln(s) = \frac{\dot{s}}{s}$$
 
-The logarithm is well defined because $$s>0$$. You also have to notice that the term $-2\phi\dot{x}$ can be written as the derivative of an integral:
+The logarithm is well defined because $$s>0$$. You also have to notice that the term $$-2\phi\dot{x}$$ can be written as the derivative of an integral:
 
 $$-2\phi\dot{x}= -2 \frac{d}{dt}\int_{0}^{x}{\phi(x)dx}$$
 
