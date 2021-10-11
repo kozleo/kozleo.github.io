@@ -9,14 +9,17 @@
         var data = new google.visualization.DataTable();
         var options = {
         backgroundColor: '#E4E4E4',
-        colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+        colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
+        sortColumn: 4,
+        sortAscending: false,
+        sort: 'enable'
         };
         data.addColumn('string', 'Title');
         data.addColumn('string', 'Author');
         data.addColumn('string', 'Genre');
         data.addColumn('string', 'Notes');
         data.addColumn('date', 'Book Finish Date');
-        data.sort({column: 4, desc: false});
+        
         
         data.addRows([
           ['Boltzmanns Atom',  'David Lindley', 'Non-Fiction', 'Very good.', new Date('Jun 1, 2014')], 
