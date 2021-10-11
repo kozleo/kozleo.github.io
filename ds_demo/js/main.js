@@ -1,3 +1,5 @@
+//Original code written by Chris Wellons (aka skeeto): https://github.com/skeeto/lorenz-webgl
+
 var lorenz = null;
 var controls = null;
 

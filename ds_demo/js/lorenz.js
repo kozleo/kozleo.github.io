@@ -1,3 +1,6 @@
+//Original code written by Chris Wellons (aka skeeto): https://github.com/skeeto/lorenz-webgl
+
+
 /**
  * @param {canvas} HTMLCanvasElement
  * @returns {Lorenz}

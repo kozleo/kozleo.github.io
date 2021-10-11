@@ -1,3 +1,4 @@
+//Original code written by Chris Wellons (aka skeeto): https://github.com/skeeto/lorenz-webgl
 function Controls(lorenz) {
     this.lorenz = lorenz;
     this.listeners = [];
