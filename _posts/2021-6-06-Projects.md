@@ -10,6 +10,8 @@ TLDR: We trained a non-human primate on a memory task. Then we recorded from its
 
 Abstract: (In Progress)
 
+![infofig2](C:\Work\Data Contraction\Robust WM Draft\new figs\infofig2.png)
+
 ## Recursive Construction of Stable Assemblies of Recurrent Neural Networks
 
 Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
