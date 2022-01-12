@@ -8,11 +8,11 @@ Here is a running list of project I'm working on or have worked on.
 
 Authors: Leo Kozachkov, John Tauber, Mikael Lundqvist, Scott Brincat, Jean-Jacques Slotine, Earl K. Miller
 
-[[Talk]](https://www.youtube.com/watch?v=xmC8CqSaZeg)
+[[Paper]](https://www.biorxiv.org/content/10.1101/2022.01.09.475558v1) [[Talk]](https://www.youtube.com/watch?v=xmC8CqSaZeg)
 
 TLDR: We trained a non-human primate on a memory task. Then we recorded from its brain while it did the task. We expected the cells inside its brain to have a lot of 'information' about the item it was remembering. We found that this wasn't true--there wasn't a lot of information in the cells. This was very confusing. Then we trained artificial neural networks on the same task using deep learning and it became less confusing.
 
-Abstract: (In Progress)
+Abstract: Working memory has long been thought to arise from sustained spiking/attractor dynamics. However, recent work has suggested that short-term synaptic plasticity (STSP) may help maintain attractor states over gaps in time with little or no spiking. To determine if STSP endows additional functional advantages, we trained artificial recurrent neural networks (RNNs) with and without STSP to perform an object working memory task. We found that RNNs with and without STSP were both able to maintain memories over distractors presented in the middle of the memory delay. However, RNNs with STSP showed activity that was similar to that seen in the cortex of monkeys performing the same task. By contrast, RNNs without STSP showed activity that was less brain-like. Further, RNNs with STSP were more robust to noise and network degradation than RNNs without STSP. These results show that STSP can not only help maintain working memories, it also makes neural networks more robust.
 
 # Recursive Construction of Stable Assemblies of Recurrent Neural Networks (2021)
 
