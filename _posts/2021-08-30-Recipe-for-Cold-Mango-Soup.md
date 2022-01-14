@@ -1,6 +1,11 @@
+```yaml
 ---
-tags: recipe
+layout: post
+title: Cold Mango Soup
+category: Dev
+tags: [web, jekyll]
 ---
+```
 
 # Cold Mango Soup
 
