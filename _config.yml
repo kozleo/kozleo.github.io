@@ -6,28 +6,18 @@ kramdown:
    math_engine: mathjax
    input: GFM
 
-excerpt_separator: "<!-- more -->"
-sass:
-  style: compressed
-  sass_dir: _scss    
+ 
 paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
 
-permalink: /blog/:year/:month/:day/:title
+#permalink: /blog/:year/:month/:day/:title
 
-# Navigation (2nd level links supported)
-nav:
-  Home:           
-    - '/'
-  Blog:           
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  About:          
-    - '/about/'
-  Github Project: 
-    - 'http://codinfox.github.io/'
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
