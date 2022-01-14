@@ -1,12 +1,11 @@
-```yaml
 ---
 layout: post
-title: What's Jekyll?
-comments: true
+title: Cold Mango Soup
 category: Misc
 tags: jekyll
 ---
-```
+
+
 
 # Cold Mango Soup
 
