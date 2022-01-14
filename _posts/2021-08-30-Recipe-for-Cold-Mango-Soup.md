@@ -1,9 +1,10 @@
 ```yaml
 ---
 layout: post
-title: Cold Mango Soup
-category: Dev
-tags: [web, jekyll]
+title: What's Jekyll?
+comments: true
+category: Misc
+tags: jekyll
 ---
 ```
 
