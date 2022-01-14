@@ -1,4 +1,9 @@
+---
+tags: recipe
+---
+
 # Cold Mango Soup
+
 ## Created by Inna Kozachkov
 - 1 Can Palm Hearts
 - 1 Red Pepper
