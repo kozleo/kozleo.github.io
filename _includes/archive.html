@@ -1,12 +1,12 @@
 <h2>Filter By Tag</h2>
 {% capture temptags %}
   {% for tag in site.tags %}
-    {{ tag[1].size | plus: 2000 }}#{{ tag[0] }}#{{ tag[1].size }}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
   {% endfor %}
 {% endcapture %}
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+  <a href="/tag/{{ tagname }}" style="color: #297C9B"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
 {% endfor %}
