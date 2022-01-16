@@ -1,3 +1,7 @@
+---
+tags: travel
+---
+
 # Dog Friendly
 
 - [Breakheart Reservation](https://www.mass.gov/locations/breakheart-reservation) 

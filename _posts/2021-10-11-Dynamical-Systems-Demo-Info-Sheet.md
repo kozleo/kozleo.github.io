@@ -1,3 +1,7 @@
+---
+tags: math+science computers
+---
+
 This info sheet goes along with [this interactive dynamical systems demo](https://kozleo.github.io/ds_demo/index.html).
 
 ## [Lorenz Attractor](https://en.wikipedia.org/wiki/Lorenz_system)

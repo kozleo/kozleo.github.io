@@ -1,3 +1,7 @@
+---
+tags: computers math+science
+---
+
 This works for me.  First you need to ssh into your remote machine with:
 
 `ssh -L 8001:localhost:8888 -L 16006:127.0.0.1:6006 leo@my_server_ip`

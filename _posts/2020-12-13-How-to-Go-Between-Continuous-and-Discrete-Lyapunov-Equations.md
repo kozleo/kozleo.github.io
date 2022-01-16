@@ -1,3 +1,7 @@
+---
+tags: math+science
+---
+
 [Lyapunov equations](https://en.wikipedia.org/wiki/Lyapunov_equation) are the bread and butter of control theory, stability theory and engineering. There are two forms of the Lyapunov equation, continuous and discrete. The discrete Lyapunov equation looks like this:
 
 $$\mathbf{A}^T\mathbf{M}\mathbf{A} - \mathbf{M} = -\mathbf{Q}$$ 
