@@ -1,26 +1,6 @@
 name: Leo Kozachkov
-gems:
-  - jekyll-paginate
 markdown: kramdown
 kramdown:
    math_engine: mathjax
-   input: GFM
 
- 
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
-
-#permalink: /blog/:year/:month/:day/:title
-
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
-
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
-
-
+permalink: /blog/:year/:month/:day/:title
