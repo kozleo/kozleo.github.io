@@ -41,3 +41,7 @@ So we get the final answer of:
 $$\int_{0}^{x}{\phi(x)dx} =\int_{0}^{x}{tanh(x)dx}= ln(cosh(x))$$
 
 Which according to the internet is correct. 
+
+
+
+Test
