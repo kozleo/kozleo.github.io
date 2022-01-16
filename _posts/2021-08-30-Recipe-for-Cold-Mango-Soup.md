@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Cold Mango Soup
 tags: recipe
 ---
 

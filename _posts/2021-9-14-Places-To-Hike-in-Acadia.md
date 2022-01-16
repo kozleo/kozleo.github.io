@@ -1,3 +1,9 @@
+---
+tags: travel
+---
+
+
+
 1. [Jordan Pond](https://www.nps.gov/acad/planyourvisit/jordan-pond.htm)
    1. Eat at the [Jordan Pond House](https://jordanpondhouse.com/). They have legendary [Popovers](https://en.wikipedia.org/wiki/Popover). However, be prepared to wait for over an hour and then get attacked by bees while you eat. 
 2. [Bubble Trail](https://www.nps.gov/thingstodo/hike-the-bubbles.htm)
