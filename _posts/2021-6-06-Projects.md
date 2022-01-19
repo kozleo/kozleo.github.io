@@ -18,7 +18,7 @@ Authors: Leo Kozachkov, Patrick M. Wensing, Jean-Jacques Slotine
 
 Abstract: We prove that Riemannian contraction in a supervised learning setting implies generalization. Specifically, we show that if an optimizer is contracting in some Riemannian metric with rate $$\lambda > 0$$, it is uniformly algorithmically stable with rate $$\mathcal{O}(1/\lambda n)$$, where $$n$$ is the number of labelled examples in the training set. The results hold for stochastic and deterministic optimization, in both continuous and discrete-time, for convex and non-convex loss surfaces. The associated generalization bounds reduce to well-known results in the particular case of gradient descent over convex or strongly convex loss surfaces. They can be shown to be optimal in  certain linear settings, such as kernel ridge regression under gradient flow.
 
-# Robust Working Memory Through Stabilizing Plasticity (2022)
+# Robust Working Memory through Short-Term Synaptic Plasticity (2022)
 
 Authors: Leo Kozachkov, John Tauber, Mikael Lundqvist, Scott Brincat, Jean-Jacques Slotine, Earl K. Miller
 
