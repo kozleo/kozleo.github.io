@@ -16,7 +16,7 @@ Authors: Leo Kozachkov, Patrick M. Wensing, Jean-Jacques Slotine
 
 [[Paper]](https://arxiv.org/pdf/2201.06656.pdf)
 
-TLDR: Training a model with an iterative optimizer (e.g, gradient descent) can be thought of as running a dynamical system on the parameter space of your model. We show that if this dynamical system is stable then adding more datapoints to your training set reduces the [generalization error](https://en.wikipedia.org/wiki/Generalization_error). 
+TLDR: Training a model with an iterative optimizer (e.g, gradient descent) can be thought of as running a dynamical system on the parameter space of your model. We show that if this dynamical system is stable, then adding more datapoints to your training set reduces the [generalization error](https://en.wikipedia.org/wiki/Generalization_error). 
 
 If you train a model using an optimizer (e.g, gradient descent)
 
