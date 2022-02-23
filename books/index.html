@@ -17,7 +17,7 @@
     font-size: 15px;
   }
 
-  .italic-green-font {    
+  .italic-green-font {
     font-family: monospace;
     color: rgb(46, 255, 5);
   }
@@ -51,20 +51,20 @@
   .black-background {
     background-color: rgb(0, 0, 0);
   }
-
 </style>
 
 
 <html>
-  <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['table']});
-      google.charts.setOnLoadCallback(drawTable);
-     
-      function drawTable() {
 
-        var cssClassNames = {
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['table'] });
+    google.charts.setOnLoadCallback(drawTable);
+
+    function drawTable() {
+
+      var cssClassNames = {
         'headerRow': '',
         'tableRow': 'black-background bold-green-font',
         'oddTableRow': 'black-background bold-green-font ',
@@ -72,172 +72,176 @@
         'hoverTableRow': 'italic-green-font large-font',
         'headerCell': 'black-background bold-green-font',
         'tableCell': '',
-        'rowNumberCell': 'underline-green-font'};
+        'rowNumberCell': 'underline-green-font'
+      };
 
-        var data = new google.visualization.DataTable();
-        var options = {
-        showRowNumber: true, 
-        width: '100%', 
+      var data = new google.visualization.DataTable();
+      var options = {
+        showRowNumber: true,
+        width: '100%',
         height: '100%',
         'cssClassNames': cssClassNames
-        };
-        
-        data.addColumn('string', 'Title');
-        data.addColumn('string', 'Author');
-        data.addColumn('string', 'Genre');
-        data.addColumn('string', 'Notes');
-        data.addColumn('date', 'Book Finish Date');
-        
-        
-        data.addRows([
-          ['Boltzmanns Atom',  'David Lindley', 'Non-Fiction', 'Very good.', new Date('Jun 1, 2014')], 
-          ['The Songs of Distant Earth',  'Arthur C. Clarke', 'Sci Fi', 'Amazing.', new Date('Sep 1, 2015')],
-          ['Snow Crash',  'Neal Stephenson', 'Sci Fi', 'Hilarious cyber-punk. Probably will read Diamond Age at some point.', new Date('Sep 30, 2014')],
-          ['Inside American Education',  'Thomas Sowell', 'Non-Fiction', 'Could have easily been catagorized as "horror"', new Date('Oct 1, 2014')],          
-          ['Portnoys Complaint',  'Philip Roth', 'Fiction', 'Otherwise known as the Woody Allen bible',new Date('Oct 5,2014')],
-          ['The Stars, My Desitination',  'Alfred Bester', 'Sci Fi', 'Read in one sitting',new Date('Nov 1,2014')],
-          ['Letters to a Young Contrarian',  'Christopher Hitchens', 'Non-Fiction', 'Not his best work.',new Date('Nov 5, 2014')],
-          ['The Adventures of Tom Sawyer',  'Mark Twain', 'Fiction', 'Never appreciated as a kid how amazing Twain is.',new Date('Nov 10,2014')],
-          ['Galapagos',  'Kurt Vonnegut', 'Fiction', 'Typical V!', new Date('Nov 20, 2014')],
-          ['Deathworld Series',  'Harry Harrison', 'Sci Fi', 'Read while sick in Dominican Republic, 2015. Dialouge was crap, but the plot was entertaining as hell.',new Date('Jan 15, 2015')],
-          ['Lolita',  'Vladimir Nabokov', 'Fiction', 'Unfair how talanted Nabokov was. Read while in CA seeing Henry defend thesis.',new Date('Feb 15, 2015')],
-          ['Dune',  'Frank Hebert', 'Sci Fi', 'Impressive. Steamrolls over you.', new Date('Mar 16, 2015')],
-          ['Brief Interviews with Hideous Men',  'David Foster Wallace', 'Fiction', 'Meh. Belletristic snooze-fest. I also own a thesaurus.', new Date('Mar 20, 2015')],
-          ['The Periodic Table',  'Primo Levi', 'Non-Fiction', '---',new Date('Mar 25, 2015')],
-          ['Everything is Illuminated',  'John Foer', 'Fiction', 'Tragic and sad. Not as good as the movie, but close.',new Date('Apr 1,2015')],
-          ['Science and Human Values',  'J. Bronowski', 'Non-Fiction', 'Very interesting.',new Date('Apr 5, 2015')],
-          ['Einsteins Dreams',  'Alan Lightman', 'Fiction', 'Beautiful little book!',new Date('Apr 8, 2015')],
-          ['Media Control',  'Noam Chomsky', 'Non-Fiction', 'Interesting, but his evidence is seriously lacking.',new Date('Apr 10, 2015')],
-          ['Corporate Media and the Threat to Democracy',  'Robert Mechesney', 'Non-Fiction', 'Some parts were interesting, like Space Jam part. Other parts were utter shit; at times devolved into nonsense complelty.', new Date('Apr 15, 2015')],
-          ['The Unbearable Lightness of Being',  'Milan Kundera', 'Fiction', 'Very good, if not a bit too long. Probably the best way to understand political movements is through absurdist art like this. Science be damned.', new Date('Apr 26, 2015')],
-          ['Three Comrades',  'Remarque','Fiction','Dedas favorite book. Writing very good and straightforward. Some parts a little drawn out. Crushing ending.',new Date('Mar 1, 2015')],
-          ['On The Move', 'Oliver Sacks','Non-Fiction','Moving, at times poetic. Excited to read his other books.',new Date('Mar 5, 2015')],
-          ['Down and Out in Paris and London', 'Geroge Orwell','Fiction','Generally very good, if not a little boring at the end. Definetly does the trick in making one more empathetic. And of course the prose is a joy. Owells hand is strong and convincing.', new Date('Mar 10,2015')],
-          ['Nine Stories', 'J.D Salinger','Fiction','Best stories are: A Perfect Day for Bananafish, For Esme, Pretty Mouth and Green my Eyes, Teddy',new Date('Mar 15,2015')],
-          ['Hallucinations', 'Oliver Sacks','Non-Fiction','His biography was better. This one was mostly boring,  unlike his life.',new Date('Mar 20,2015')],
-          ['Pleasures of the Damned', 'Charles Bukowski','Poetry','A genuis when hes a genius; angsty drunk otherwise.',new Date('Mar 25, 2015')],
-          ['The Book of Job', 'N/A','Fiction','One of the oldest, saddest stories ever told.',new Date('Apr 1,2015')],
-          ['Childhoods End', 'Arthur C. Clarke','Sci Fi','Very good sci fi and original as hell.',new Date('Apr 10,2015')],
-          ['Survival in Auschwitz',  'Primo Levi', 'Non-Fiction', 'Stark and beautiful and scientific.',new Date('Apr 15,2015')],
-          ['Sirens of Titan', 'Kurt Vonnegut', 'Fiction', 'Funny, easy to read, poignant. In other words--Vonnegut.',new Date('Apr 20, 2015')],
-          ['Mortality', 'Christopher Hitchens', 'Non-Fiction', 'Very good notes from the bottom of a brightly-burning candlestick.',new Date('Apr 25, 2015')],
-          ['The Drunkards Walk', 'Leonard Mlodinow', 'Non-Fiction', 'Enjoyed it a lot. A bit too much financial stuff for my liking, but good nontheless.',new Date('May 1, 2015')],
-          ['1776', 'David McCullough', 'Non-Fiction', 'Very good book. Well-written, author is very skilled story-telling. Started book on train en route to D.C with Allison, finished a few days after trip at home. Going to read more on this.',new Date('May 5, 2015')],
-          ['The Martian', 'Andy Weir', 'Sci Fi', 'First new book Ive read in a long time. First 30 pages horrible, rest are great.',new Date('May 10, 2015')],
-          ['Gratitude', 'Oliver Sacks', 'Non-Fiction', 'Read essays when originally published in NYT. Amazing, obviously.',new Date('May 15, 2015')],
-          ['Pedro Paramo', 'Juan Rulfo', 'Fiction', 'Meh. Maybe I should reread it, but the critical praise it got didnt match my experience.',new Date('May 20, 2015')],
-          ['Do Androids Dream of Electric Sheep?', 'Philip K Dick', 'Sci Fi', '10/10',new Date('May 26, 2015')],
-          ['Look at the Birdie', 'Kurt Vonnegut', 'Fiction', 'Amazing short stories. Beats me why he never published them.',new Date('Jun 1, 2015')],
-          ['Breakfast of Champions', 'Kurt Vonnegut', 'Sci Fi', 'He was sick when he wrote this.',new Date('Jun 5, 2015')],
-          ['The Birth of the Republic', 'Edmund S. Morgan', 'Non-Fiction', 'Another cupcake in my early American history binge. Very dense, good for bullets. Not much in the way of narritave.',new Date('Jun 10, 2015')],
-          ['Everyman', 'Philip Roth', 'Fiction', 'Very depressing. Not Portnoys complaint.',new Date('Jun 15, 2015')],
-          ['John Adams', 'David McCullough', 'Non Fiction', 'HBO show + 1776 (same author) inspired this read. Very good. Very interesting.',new Date('Sep 1, 2015')],
-          ['A Man Without a Country', 'Kurt Vonnegut', 'Non-Fiction', 'Horrible. Very political, never funny.',new Date('Jan 1, 2016')],
-          ['Rendezvous with Rama', 'Arthur C. Clarke', 'Sci Fi', 'One of the best sci-fi books Ive ever read. By FAR Clarkes best work.',new Date('Mar 28, 2016')],
-          ['Gilgamesh', 'Herbert Mason', 'Fiction', 'Should reread. Very old and very interesting.',new Date('Apr 1, 2016')],
-          ['When Breath becomes Air', 'Paul Kalanithi', 'Non-Fiction', 'Amazing and heartwrenching. He was a great writer/feeler. Will buy for Henry to read.',new Date('May 1, 2016')],
-          ['Foundations Edge', 'Issac Asimov', 'Sci Fi', 'MUCH better than the original trilogy, which were fucking unreadable. Bio of Hari Seldon.',new Date('May 20, 2016')],
-          ['SYNC', 'Steven Strogatz', 'Non-Fiction', 'Loved it. Obvious ties to neuro, also had cool stuff about astro and general history of field. Should look more into N.L.D and chaos stuff, particularly where it intersects with probability and graphs...Strogatz is a clear writer, althoug he does feel the need to remind reader of acedmic pedigree a bit too often I think.',new Date('Jun 1,2016')],
-          ['Brain of Fire', 'S. Cahalan', 'Non Fiction', 'Read in June, 16. Deeply, deeply disturbing. Brave, clear, clinical when needed, intimate and personal otherwise.',new Date('Jun 5,2016')],
-          ['An Unquiet Mind', 'K. Jamison', 'Non Fiction', 'Read in July, 16. Well written. Interesting look into how a professional clinician thinks about brain/mind. Probably everyone has wondered if they too might have B.D. Overall enjoyed.',new Date('July 1, 2016')],
-          ['The First Law, Book 1', 'Joe Abercrombie', 'Fiction', 'Read in August 16. Incredible fantasy book. Excited to read next. Characters have real depth.',new Date('Aug 1, 2016')],
-          ['What is Man?', 'Mark Twain', 'Non- Fiction', 'Read in August 16. Decent collection of Twain stuff...some better than others. Still hilarious though.',new Date('Aug 5, 2016')],
-          ['Neverness', 'David Zindell', 'Sci-Fi', 'Read in early september, 16. Very conflicted about this book. On the one hand, the ideas feel fresh and creative. On other hand, the writing at times is drawn out and mawkish. It could be that I took too long to read it. Will almost certainly be reading the sequels. ',new Date('Sep 1, 2016')],
-          ['The Other Brain', 'D. Fields', 'Non-Fiction', 'Very interesting look at glial cells.',new Date('Sep 5, 2016')],
-          ['Love is a Dog from Hell', 'Charles Bukowski', 'Poetry', 'Great collections of Hanks early poems. Very easy to read, even easier to enjoy.',new Date('Sep 10, 2016')],
-          ['In Search of Memory', 'Eric Kandel', 'Non-Fiction', 'Overall good read. Liked autobiographical parts more. Also interesting to contrast his view of winning Nobel to Feynmans...',new Date('Sep 15, 2016')],
-          ['Hitchhikers Guide 1', 'Douglas Adams', 'Sci Fi', 'Just as amazing the second time around.',new Date('Oct 1, 2016')],
-          ['First Law, Book 2: Before they are Hanged', 'Joe Abercrombie', 'Fiction', 'Read in November of 16. Much better than book 1, and book 1 is amazing.',new Date('Nov 1, 2016')],
-          ['First Law Book 3, Last Arguement of Kings', 'Joe Abercrombie', 'Fiction', 'Wow!',new Date('Nov 5, 2016')],
-          ['The Best of Robert Silverberg', 'Robert Silverberg', 'Sci Fi', 'Great short stories, will 100% check more stuff by him out.',new Date('Nov 10, 2016')],
-          ['Stories of your Life', 'Ted Chiang', 'Sci Fi', 'Great short stories, in particular Understand',new Date('Nov 20, 2016')],
-          ['Oryx and Crake', 'M. Atwood', 'Sci Fi', 'Did not like it. Too slow. ',new Date('Nov 25, 2016')],
-          ['The Eye', 'Vladimir Nabokov', 'Fiction', 'Dec 16. Amazing prose as usual.',new Date('Dec 1, 2016')],
-          ['Two Cheers for Anarchism', 'James C. Scott', 'Non-Fic', 'Jan 17. Best book I have ever read on subject.',new Date('Dec 5, 2016')],
-          ['Gentleman Bastards Book 1: The Lies of Locke Lamora', 'Scott Lynch', 'Fiction', 'Very good, will be reading others in series.',new Date('Dec 10, 2016')],
-          ['Gentleman Bastards Book 2: Red Seas under Red Skies', 'Scott Lynch', 'Fiction', 'Fuck yes--pirates! Finished in March 2017.',new Date('Dec 15, 2016')],
-          ['Consciousness: Confessions of a Romantic Reductionist', 'Christof Koch', 'Non-Fiction', 'Really, really good read. Disagreed with practically everything Koch says in the book. Argued the whole way through. Finished April 1st 2017.',new Date('Apr 1, 2017')],
-          ['A Natural History of the Senses', 'Diane Ackerman', 'Non Fiction', 'Finished in April 2017. Incredible naturalism writing, some parts are bullshit but overall I really enjoyed. Will read Alchemy of the Mind next.',new Date('Apr 10, 2017')],
-          ['Indignation', 'Philip Roth', 'Fiction', 'Finished end of April 2017. Obviously very good. Still not Portnoys Complaint though.',new Date('Apr 15, 2017')],
-          ['Brain', 'Robin Cook', 'Fiction', 'Finished May 4,2017. Meh. ',new Date('Apr 20, 2017')],
-          ['Advice for a Young Investigator', 'Santiago Ramon y Cajal', 'Non Fiction', 'Finished in late May, 2017. Some part woefully outdated, other parts still good. Overall OK. More interesting for historical reasons than anything else.',new Date('May 1, 2017')],
-          ['On Intelligence', 'Jeff Hawkins', 'Non Fiction', 'Finished in late late May, 2017. Not many new ideas, just old ones repackaged--which is not neccesarily a bad thing. Definetly passionate and inspired. Would have been better if he had published actual scientific work, instead of just giving us a general verbal theory. Still enjoyed it, made me argue a lot.',new Date('May 25, 2017')],
-          ['Diary of an Oxygen Thief', 'Anonymous', 'Fiction', 'Very funny. Almost like Apathy and Other Small Victories. Finished in early June, 2017.',new Date('Jun 1, 2017')],
-          ['Brain,Vision,Memory: Tales in the History of Neuroscience', 'Charles G. Gross',  'Non-Fiction', 'Loved it. Will read more C.G and also more history of neuro books. Finished Mid June,2017.',new Date('Jun 15, 2017')],
-          ['The Pleasure of Finding Things Out', 'Richard P. Feynman', 'Non-Fiction', 'Read most of them already, still funny/inspiring the second time around. Finished early July.',new Date('Jul 1, 2017')],
-          ['Psychology and Education', 'Carl Jung', 'Non-Fiction', 'Finished June 10,2017. Incredible book with incredible depth and clarity and honest. The man was a genius and I cant believe I waited this long to read him.',new Date('Jul 10, 2017')],
-          ['The Hepatitis Bathtub and Other Stories', 'NOFX', 'Non-Fiction', 'Punk rock can be...scary? Too many dead people. Finished mid July, 2017. ',new Date('Jul 15, 2017')],
-          ['The Little Prince', 'Antoine De Saint-Exupery', 'Fiction', 'Nice! Reminded me a bit of Breakfast of Champions. Finished late July, 2017.',new Date('Jul 20, 2017')],
-          ['Recent Words', 'John Shepherd', 'Fiction', 'Jersey-grown! A few poems really stood out. Finished late July, 2017.',new Date('Jul 25, 2017')],
-          ['The Unexpected Universe', 'Loren Eiseley', 'Non-Fiction', 'Some essays (e.g The Last Neanderthal) are better than others,  but all are amazingly well-written. Finished early August, 2017. ',new Date('Aug 1, 2017')],
-          ['The Accidental Universe', 'Alan Lightman', 'Non-Fiction', 'Incredibly well-written. Beautiful essays. Finished early August, 2017.',new Date('Aug 5, 2017')],
-          ['Monkeyluv', 'Robert Sapolsky', 'Non-Fiction', 'Hilarious, well-written, lacking a bit in the statistical intepretation department, but still really enjoyable overall. Finished early August, 2017.',new Date('Aug 10, 2017')],
-          ['Adventures of a Mathematician', 'Stanislaw Ulam', 'Non-Fiction', 'Entertaining. Finished March 2018',new Date('Mar 1, 2018')],
-          ['Perfume: The Story of a Murderer', 'Patrick Suskind', 'Fiction', 'Fucking amazing. Got it on a rec from Kurt Cobain. I can totally see why he liked it. Finished Dec,2019.',new Date('Dec 1, 2019')],
-          ['The Book of Why: The New Science of Cause and Effect', 'Judea Pearl', 'Non-Fiction', 'Pretty good. Casuality is weird. Pearl loves himself a lot. Finished Dec 2019.',new Date('Dec 5, 2019')],
-          ['The Coddling of the American Mind', 'Greg Lukianoff & Jonathon Haidt', 'Non-Fiction', 'Wish it was fiction. Answers a lot of good questions. Finished Jan 2020.',new Date('Dec 10, 2019')],
-          ['Deciphering the Cosmic Number', 'Arthur Miller', 'Non-Fiction', 'Man Pauli was fucking weird. Jung too. Finished Jan 2020.',new Date('Jan 1, 2020')],
-          ['The Body: A Guide for Occupants', 'Bill Bryson', 'Non-Fiction', 'Vintage Bryson. Very good. Finished Jan 2020.',new Date('Jan 5, 2020')],
-          ['The Joy of x: A Guided Tour of Math, from One to Infinity', 'Steven Strogatz', 'Non-Fiction', 'Vintage Strogatz. Also very good. Finished April 2020.',new Date('Apr 10, 2020')],
-          ['Nicholas and Alexandra', 'Robert Massie', 'Non-Fiction', 'Why did they have to shoot the cocker spaniel? :( Finished Jun 2020',new Date('Jun 1, 2020')],
-          ['Sapiens', 'Yuval Harari', 'Non-Fiction', 'Very good, if a bit speculative. Finished summer 2019 (I think).',new Date('Jun 5, 2020')],
-          ['A Conflict of Visions: Ideological Origins of Political Struggles', 'Thomas Sowell', 'Non-Fiction', 'The best book on political science ever written, if you ask me. Read once a year since 2018.',new Date('Jun 10, 2020')],
-          ['Black Rednecks and White Liberals', 'Thomas Sowell', 'Non-Fiction', 'Very interesting collection of essays. I particuarly like the one on jews being not generic. Finished summer 2020.',new Date('Jul 1, 2020')],
-          ['A Personal Odyssey','Thomas Sowell','Non-Fiction','What an angry, intelligent person. Wish he discussed the writing of CoV more.',new Date('November 24, 2020')],
-          ['Some Remarks','Neal Stephenson','Non-Fiction','Pretty good.',new Date('Jan 10, 2020')],
-          ['Mans Search for Meaning','Victor Frankl','Non-Fiction','-',new Date('Jan 15, 2020')],
-          ['A Song of Ice and Fire','George RR Martin','Fiction','Finish the fucking books PLEASE.',new Date('Feb 15, 2020')],
-          ['The Mind of a Mnemonist','Alexander Luria','Non-Fiction','Not bad...I see why Oliver Sacks liked him.',new Date('Feb 20, 2020')],
-          ['Leonardo da Vinci','Walter Isaacson','Non-Fiction','I too cant finish anything I start--am I da Vinci?',new Date('Feb 25, 2020')],
-          ['Enemies: A Love Story','Isaac Bashevis Singer','Fiction','Also very, very good.',new Date('Mar 5, 2020')],
-          ['You Are Not a Gadget: A Manifesto','Jaron Lanier','Non-Fiction','Terrifying and true.',new Date('Mar 10, 2020')],
-          ['The Death of Ivan Ilyich','Leo Tolstoy','Fiction','Oof. Pretty good. Mercifully short.',new Date('Mar 15, 2020')],
-          ['Anthem','Ayn Rand','Fiction','Nice. Wish I had read it when I was 14 though.',new Date('Mar 16, 2020')],
-          ['Love and Math','Edward Frenkel','Non-Fiction','A bit cheesy but nice! We used to shop at the same Starmarket near Harvard.',new Date('Mar 20, 2020')],
-          ['The Road','Cormac McCarthy','Fiction','Crushing.',new Date('Mar 23, 2020')],
-          ['Temple of the Winds','Terry Goodkind','Fiction','Fourth book in the Sword of Truth series. Probably the best one so far, with the exception of maybe book 2.',new Date('Dec 3, 2020')],
-          ['The Art of Doing Science and Engineering','Richard W. Hamming','Non-Fiction','Pretty good. I like the bit about the drunken sailor with bias. Style reminds me of Feynman a bit.',new Date('Dec 7, 2020')],
-          ['Fall, Or, Dodge in Hell','Neal Stephenson','Fiction','The best parts of this book have already probably made a permanent home in my mind somewhere. Like the entire first Dodge became conscious sequence is Special. But oh my god the bad in this book was bad. Stop fucking introducing new characters every 30 pages. Stop spending forever on detours that dont go anywhere. Like, Chekovs gun motherfucker--heard of it?! He struggled with consistency here in the same way he didnt struggle with it in Snow Crash.',new Date('Dec 27, 2020')],
-          ['The Information','James Gleik','Non-Fiction','Nowhere even close to Chaos, but tolerably OK.',new Date('Jan 11, 2021')],
-          ['The Denial of Death','Ernest Becker','Non-Fiction','Very good. Will write longer post about it eventually.',new Date('Jan 24, 2021')],
-          ['The Worm at the Core: On the Role of Death in Life','Jeff Greenberg, Sheldon Solomon and Tom Pyszczynski','Non-Fiction','Interesting experiments inspired by Beckers basic ideas, written by three social psychologists.',new Date('Feb 07, 2021')],
-          ['Models of the Mind','Grace Lindsey','Non-Fiction','Really good history/survey of comp neuro. Particularly enjoyed the discussion around the pitfalls of comp neuro trying to follow in the footsteps of Older Sibling Physics.',new Date('March 19, 2021')],        
-          ['An Anthropologist on Mars','Oliver Sacks','Non-Fiction','I can only handle about one Sacks book per year, but I never miss a year. The books eponymous chapter was the best.',new Date('March 27,2021')],
-          ['The Story of the Human Body','Daniel E. Lieberman','Non-Fiction','Book was OK. Really repetitive. One chapter about brain evolution was interesting. Everything was kinda lackluster.', new Date('March 9, 2021') ],
-          ['The Spike','Mark Humphries','Non-Fiction','The book did not live up to its grand ambitions. Sometimes it was really good, most of the time it was scattered. It was not clear who the book was written for. Peeled some good references off it, tho.', new Date('April 22,2021')],
-          ['The Best of Issac Asimov','Issac Asimov','Fiction','Ive never been more jealous of anyone, dead or alive.', new Date('May 17,2021')],
-          ['Desert Solitaire','Edward Abbey','Non-Fiction','Only interesting if youve travelled to southeast Utah, which I recently have. Very well written. Shades of Hemmingway style. Suprisingly modern for a book written in 1968.', new Date('June 27,2021')],
-          ['Asassins Apprentice','Robin Hobb','Fiction','Magic system is really cool, love the Skill and Wit. Character building pretty bad. World building really bad. Prose started shitty but got good.', new Date('July 31,2021')],
-          ['The King of The Fields','Isaac Bashevis Singer','Fiction','Reread because this book is amazing and now lives in my heart rent free.', new Date('August 8,2021')],
-          ['Children of Time','Adrian Tchaikovsky','Fiction','Unquestionably the best sci-fi book Ive read in a very long time. Absolutely loved it. ', new Date('Sep 1,2021')],
-          ['Kindly Inquisitors','Jonathan Rauch ','Non-Fiction','An old book on Political Correctness, Cancel Culture, etc. Reads like it could be written tomorrow. Hopefully it wont be. ', new Date('Sep 12,2021')],
-          ['Bad Blood: Secrets and Lies in a Silicon Valley Startup',' John Carreyrou ','Non-Fiction','Wow. Great read on a great liar. Like, maybe the best liar Ive ever read about.', new Date('Sep 29,2021')],
-          ['Slaughterhouse Five',' Kurt Vonnegut ','Fiction','Its good to periodically reread the best fiction book ever written.', new Date('Oct 5, 2021')],
-          ['A History of the Ancient World',' Chester Starr ','Non-Fiction','Only got up to the beginning of Rome, but the parts on early Mesopotamia, Egypt, Cannan, India and China are very good.', new Date('Oct 20, 2021')],
-          ['The Death of Ivan Ilyich',' Leo Tolstoy','Fiction','Sometimes you just want to reread a book about a guy avoiding unpleasant things in life until he gets a terminal disease, deteriorates slowly, screams for three consecutive days and then dies.', new Date('Nov 5, 2021')],
-          ['Breath','James Nestor','Non-Fiction','Interesting enough. Felt like I was being sold something the whole time though.', new Date('Nov 11, 2021')],
-          ['Harry Potter Books 1-7','JK Rowling','Fiction','Because sometimes self-care is reading HP from start to finish for the 100th time.', new Date('Jan 16, 2022')],
-          ['The Jews in Literature and Art','Sharon R. Keller', 'Non-Fiction', 'Interesting book with lots of pictures, paintings and passages from the long and...storied...history of the Jews.',new Date('Jan 25, 2022')]             
-        ])
-          ;
+      };
+
+      data.addColumn('string', 'Title');
+      data.addColumn('string', 'Author');
+      data.addColumn('string', 'Genre');
+      data.addColumn('string', 'Notes');
+      data.addColumn('date', 'Book Finish Date');
 
 
-        var table = new google.visualization.Table(document.getElementById('table_div'));
+      data.addRows([
+        ['Boltzmanns Atom', 'David Lindley', 'Non-Fiction', 'Very good.', new Date('Jun 1, 2014')],
+        ['The Songs of Distant Earth', 'Arthur C. Clarke', 'Sci Fi', 'Amazing.', new Date('Sep 1, 2015')],
+        ['Snow Crash', 'Neal Stephenson', 'Sci Fi', 'Hilarious cyber-punk. Probably will read Diamond Age at some point.', new Date('Sep 30, 2014')],
+        ['Inside American Education', 'Thomas Sowell', 'Non-Fiction', 'Could have easily been catagorized as "horror"', new Date('Oct 1, 2014')],
+        ['Portnoys Complaint', 'Philip Roth', 'Fiction', 'Otherwise known as the Woody Allen bible', new Date('Oct 5,2014')],
+        ['The Stars, My Desitination', 'Alfred Bester', 'Sci Fi', 'Read in one sitting', new Date('Nov 1,2014')],
+        ['Letters to a Young Contrarian', 'Christopher Hitchens', 'Non-Fiction', 'Not his best work.', new Date('Nov 5, 2014')],
+        ['The Adventures of Tom Sawyer', 'Mark Twain', 'Fiction', 'Never appreciated as a kid how amazing Twain is.', new Date('Nov 10,2014')],
+        ['Galapagos', 'Kurt Vonnegut', 'Fiction', 'Typical V!', new Date('Nov 20, 2014')],
+        ['Deathworld Series', 'Harry Harrison', 'Sci Fi', 'Read while sick in Dominican Republic, 2015. Dialouge was crap, but the plot was entertaining as hell.', new Date('Jan 15, 2015')],
+        ['Lolita', 'Vladimir Nabokov', 'Fiction', 'Unfair how talanted Nabokov was. Read while in CA seeing Henry defend thesis.', new Date('Feb 15, 2015')],
+        ['Dune', 'Frank Hebert', 'Sci Fi', 'Impressive. Steamrolls over you.', new Date('Mar 16, 2015')],
+        ['Brief Interviews with Hideous Men', 'David Foster Wallace', 'Fiction', 'Meh. Belletristic snooze-fest. I also own a thesaurus.', new Date('Mar 20, 2015')],
+        ['The Periodic Table', 'Primo Levi', 'Non-Fiction', '---', new Date('Mar 25, 2015')],
+        ['Everything is Illuminated', 'John Foer', 'Fiction', 'Tragic and sad. Not as good as the movie, but close.', new Date('Apr 1,2015')],
+        ['Science and Human Values', 'J. Bronowski', 'Non-Fiction', 'Very interesting.', new Date('Apr 5, 2015')],
+        ['Einsteins Dreams', 'Alan Lightman', 'Fiction', 'Beautiful little book!', new Date('Apr 8, 2015')],
+        ['Media Control', 'Noam Chomsky', 'Non-Fiction', 'Interesting, but his evidence is seriously lacking.', new Date('Apr 10, 2015')],
+        ['Corporate Media and the Threat to Democracy', 'Robert Mechesney', 'Non-Fiction', 'Some parts were interesting, like Space Jam part. Other parts were utter shit; at times devolved into nonsense complelty.', new Date('Apr 15, 2015')],
+        ['The Unbearable Lightness of Being', 'Milan Kundera', 'Fiction', 'Very good, if not a bit too long. Probably the best way to understand political movements is through absurdist art like this. Science be damned.', new Date('Apr 26, 2015')],
+        ['Three Comrades', 'Remarque', 'Fiction', 'Dedas favorite book. Writing very good and straightforward. Some parts a little drawn out. Crushing ending.', new Date('Mar 1, 2015')],
+        ['On The Move', 'Oliver Sacks', 'Non-Fiction', 'Moving, at times poetic. Excited to read his other books.', new Date('Mar 5, 2015')],
+        ['Down and Out in Paris and London', 'Geroge Orwell', 'Fiction', 'Generally very good, if not a little boring at the end. Definetly does the trick in making one more empathetic. And of course the prose is a joy. Owells hand is strong and convincing.', new Date('Mar 10,2015')],
+        ['Nine Stories', 'J.D Salinger', 'Fiction', 'Best stories are: A Perfect Day for Bananafish, For Esme, Pretty Mouth and Green my Eyes, Teddy', new Date('Mar 15,2015')],
+        ['Hallucinations', 'Oliver Sacks', 'Non-Fiction', 'His biography was better. This one was mostly boring,  unlike his life.', new Date('Mar 20,2015')],
+        ['Pleasures of the Damned', 'Charles Bukowski', 'Poetry', 'A genuis when hes a genius; angsty drunk otherwise.', new Date('Mar 25, 2015')],
+        ['The Book of Job', 'N/A', 'Fiction', 'One of the oldest, saddest stories ever told.', new Date('Apr 1,2015')],
+        ['Childhoods End', 'Arthur C. Clarke', 'Sci Fi', 'Very good sci fi and original as hell.', new Date('Apr 10,2015')],
+        ['Survival in Auschwitz', 'Primo Levi', 'Non-Fiction', 'Stark and beautiful and scientific.', new Date('Apr 15,2015')],
+        ['Sirens of Titan', 'Kurt Vonnegut', 'Fiction', 'Funny, easy to read, poignant. In other words--Vonnegut.', new Date('Apr 20, 2015')],
+        ['Mortality', 'Christopher Hitchens', 'Non-Fiction', 'Very good notes from the bottom of a brightly-burning candlestick.', new Date('Apr 25, 2015')],
+        ['The Drunkards Walk', 'Leonard Mlodinow', 'Non-Fiction', 'Enjoyed it a lot. A bit too much financial stuff for my liking, but good nontheless.', new Date('May 1, 2015')],
+        ['1776', 'David McCullough', 'Non-Fiction', 'Very good book. Well-written, author is very skilled story-telling. Started book on train en route to D.C with Allison, finished a few days after trip at home. Going to read more on this.', new Date('May 5, 2015')],
+        ['The Martian', 'Andy Weir', 'Sci Fi', 'First new book Ive read in a long time. First 30 pages horrible, rest are great.', new Date('May 10, 2015')],
+        ['Gratitude', 'Oliver Sacks', 'Non-Fiction', 'Read essays when originally published in NYT. Amazing, obviously.', new Date('May 15, 2015')],
+        ['Pedro Paramo', 'Juan Rulfo', 'Fiction', 'Meh. Maybe I should reread it, but the critical praise it got didnt match my experience.', new Date('May 20, 2015')],
+        ['Do Androids Dream of Electric Sheep?', 'Philip K Dick', 'Sci Fi', '10/10', new Date('May 26, 2015')],
+        ['Look at the Birdie', 'Kurt Vonnegut', 'Fiction', 'Amazing short stories. Beats me why he never published them.', new Date('Jun 1, 2015')],
+        ['Breakfast of Champions', 'Kurt Vonnegut', 'Sci Fi', 'He was sick when he wrote this.', new Date('Jun 5, 2015')],
+        ['The Birth of the Republic', 'Edmund S. Morgan', 'Non-Fiction', 'Another cupcake in my early American history binge. Very dense, good for bullets. Not much in the way of narritave.', new Date('Jun 10, 2015')],
+        ['Everyman', 'Philip Roth', 'Fiction', 'Very depressing. Not Portnoys complaint.', new Date('Jun 15, 2015')],
+        ['John Adams', 'David McCullough', 'Non Fiction', 'HBO show + 1776 (same author) inspired this read. Very good. Very interesting.', new Date('Sep 1, 2015')],
+        ['A Man Without a Country', 'Kurt Vonnegut', 'Non-Fiction', 'Horrible. Very political, never funny.', new Date('Jan 1, 2016')],
+        ['Rendezvous with Rama', 'Arthur C. Clarke', 'Sci Fi', 'One of the best sci-fi books Ive ever read. By FAR Clarkes best work.', new Date('Mar 28, 2016')],
+        ['Gilgamesh', 'Herbert Mason', 'Fiction', 'Should reread. Very old and very interesting.', new Date('Apr 1, 2016')],
+        ['When Breath becomes Air', 'Paul Kalanithi', 'Non-Fiction', 'Amazing and heartwrenching. He was a great writer/feeler. Will buy for Henry to read.', new Date('May 1, 2016')],
+        ['Foundations Edge', 'Issac Asimov', 'Sci Fi', 'MUCH better than the original trilogy, which were fucking unreadable. Bio of Hari Seldon.', new Date('May 20, 2016')],
+        ['SYNC', 'Steven Strogatz', 'Non-Fiction', 'Loved it. Obvious ties to neuro, also had cool stuff about astro and general history of field. Should look more into N.L.D and chaos stuff, particularly where it intersects with probability and graphs...Strogatz is a clear writer, althoug he does feel the need to remind reader of acedmic pedigree a bit too often I think.', new Date('Jun 1,2016')],
+        ['Brain of Fire', 'S. Cahalan', 'Non Fiction', 'Read in June, 16. Deeply, deeply disturbing. Brave, clear, clinical when needed, intimate and personal otherwise.', new Date('Jun 5,2016')],
+        ['An Unquiet Mind', 'K. Jamison', 'Non Fiction', 'Read in July, 16. Well written. Interesting look into how a professional clinician thinks about brain/mind. Probably everyone has wondered if they too might have B.D. Overall enjoyed.', new Date('July 1, 2016')],
+        ['The First Law, Book 1', 'Joe Abercrombie', 'Fiction', 'Read in August 16. Incredible fantasy book. Excited to read next. Characters have real depth.', new Date('Aug 1, 2016')],
+        ['What is Man?', 'Mark Twain', 'Non- Fiction', 'Read in August 16. Decent collection of Twain stuff...some better than others. Still hilarious though.', new Date('Aug 5, 2016')],
+        ['Neverness', 'David Zindell', 'Sci-Fi', 'Read in early september, 16. Very conflicted about this book. On the one hand, the ideas feel fresh and creative. On other hand, the writing at times is drawn out and mawkish. It could be that I took too long to read it. Will almost certainly be reading the sequels. ', new Date('Sep 1, 2016')],
+        ['The Other Brain', 'D. Fields', 'Non-Fiction', 'Very interesting look at glial cells.', new Date('Sep 5, 2016')],
+        ['Love is a Dog from Hell', 'Charles Bukowski', 'Poetry', 'Great collections of Hanks early poems. Very easy to read, even easier to enjoy.', new Date('Sep 10, 2016')],
+        ['In Search of Memory', 'Eric Kandel', 'Non-Fiction', 'Overall good read. Liked autobiographical parts more. Also interesting to contrast his view of winning Nobel to Feynmans...', new Date('Sep 15, 2016')],
+        ['Hitchhikers Guide 1', 'Douglas Adams', 'Sci Fi', 'Just as amazing the second time around.', new Date('Oct 1, 2016')],
+        ['First Law, Book 2: Before they are Hanged', 'Joe Abercrombie', 'Fiction', 'Read in November of 16. Much better than book 1, and book 1 is amazing.', new Date('Nov 1, 2016')],
+        ['First Law Book 3, Last Arguement of Kings', 'Joe Abercrombie', 'Fiction', 'Wow!', new Date('Nov 5, 2016')],
+        ['The Best of Robert Silverberg', 'Robert Silverberg', 'Sci Fi', 'Great short stories, will 100% check more stuff by him out.', new Date('Nov 10, 2016')],
+        ['Stories of your Life', 'Ted Chiang', 'Sci Fi', 'Great short stories, in particular Understand', new Date('Nov 20, 2016')],
+        ['Oryx and Crake', 'M. Atwood', 'Sci Fi', 'Did not like it. Too slow. ', new Date('Nov 25, 2016')],
+        ['The Eye', 'Vladimir Nabokov', 'Fiction', 'Dec 16. Amazing prose as usual.', new Date('Dec 1, 2016')],
+        ['Two Cheers for Anarchism', 'James C. Scott', 'Non-Fic', 'Jan 17. Best book I have ever read on subject.', new Date('Dec 5, 2016')],
+        ['Gentleman Bastards Book 1: The Lies of Locke Lamora', 'Scott Lynch', 'Fiction', 'Very good, will be reading others in series.', new Date('Dec 10, 2016')],
+        ['Gentleman Bastards Book 2: Red Seas under Red Skies', 'Scott Lynch', 'Fiction', 'Fuck yes--pirates! Finished in March 2017.', new Date('Dec 15, 2016')],
+        ['Consciousness: Confessions of a Romantic Reductionist', 'Christof Koch', 'Non-Fiction', 'Really, really good read. Disagreed with practically everything Koch says in the book. Argued the whole way through. Finished April 1st 2017.', new Date('Apr 1, 2017')],
+        ['A Natural History of the Senses', 'Diane Ackerman', 'Non Fiction', 'Finished in April 2017. Incredible naturalism writing, some parts are bullshit but overall I really enjoyed. Will read Alchemy of the Mind next.', new Date('Apr 10, 2017')],
+        ['Indignation', 'Philip Roth', 'Fiction', 'Finished end of April 2017. Obviously very good. Still not Portnoys Complaint though.', new Date('Apr 15, 2017')],
+        ['Brain', 'Robin Cook', 'Fiction', 'Finished May 4,2017. Meh. ', new Date('Apr 20, 2017')],
+        ['Advice for a Young Investigator', 'Santiago Ramon y Cajal', 'Non Fiction', 'Finished in late May, 2017. Some part woefully outdated, other parts still good. Overall OK. More interesting for historical reasons than anything else.', new Date('May 1, 2017')],
+        ['On Intelligence', 'Jeff Hawkins', 'Non Fiction', 'Finished in late late May, 2017. Not many new ideas, just old ones repackaged--which is not neccesarily a bad thing. Definetly passionate and inspired. Would have been better if he had published actual scientific work, instead of just giving us a general verbal theory. Still enjoyed it, made me argue a lot.', new Date('May 25, 2017')],
+        ['Diary of an Oxygen Thief', 'Anonymous', 'Fiction', 'Very funny. Almost like Apathy and Other Small Victories. Finished in early June, 2017.', new Date('Jun 1, 2017')],
+        ['Brain,Vision,Memory: Tales in the History of Neuroscience', 'Charles G. Gross', 'Non-Fiction', 'Loved it. Will read more C.G and also more history of neuro books. Finished Mid June,2017.', new Date('Jun 15, 2017')],
+        ['The Pleasure of Finding Things Out', 'Richard P. Feynman', 'Non-Fiction', 'Read most of them already, still funny/inspiring the second time around. Finished early July.', new Date('Jul 1, 2017')],
+        ['Psychology and Education', 'Carl Jung', 'Non-Fiction', 'Finished June 10,2017. Incredible book with incredible depth and clarity and honest. The man was a genius and I cant believe I waited this long to read him.', new Date('Jul 10, 2017')],
+        ['The Hepatitis Bathtub and Other Stories', 'NOFX', 'Non-Fiction', 'Punk rock can be...scary? Too many dead people. Finished mid July, 2017. ', new Date('Jul 15, 2017')],
+        ['The Little Prince', 'Antoine De Saint-Exupery', 'Fiction', 'Nice! Reminded me a bit of Breakfast of Champions. Finished late July, 2017.', new Date('Jul 20, 2017')],
+        ['Recent Words', 'John Shepherd', 'Fiction', 'Jersey-grown! A few poems really stood out. Finished late July, 2017.', new Date('Jul 25, 2017')],
+        ['The Unexpected Universe', 'Loren Eiseley', 'Non-Fiction', 'Some essays (e.g The Last Neanderthal) are better than others,  but all are amazingly well-written. Finished early August, 2017. ', new Date('Aug 1, 2017')],
+        ['The Accidental Universe', 'Alan Lightman', 'Non-Fiction', 'Incredibly well-written. Beautiful essays. Finished early August, 2017.', new Date('Aug 5, 2017')],
+        ['Monkeyluv', 'Robert Sapolsky', 'Non-Fiction', 'Hilarious, well-written, lacking a bit in the statistical intepretation department, but still really enjoyable overall. Finished early August, 2017.', new Date('Aug 10, 2017')],
+        ['Adventures of a Mathematician', 'Stanislaw Ulam', 'Non-Fiction', 'Entertaining. Finished March 2018', new Date('Mar 1, 2018')],
+        ['Perfume: The Story of a Murderer', 'Patrick Suskind', 'Fiction', 'Fucking amazing. Got it on a rec from Kurt Cobain. I can totally see why he liked it. Finished Dec,2019.', new Date('Dec 1, 2019')],
+        ['The Book of Why: The New Science of Cause and Effect', 'Judea Pearl', 'Non-Fiction', 'Pretty good. Casuality is weird. Pearl loves himself a lot. Finished Dec 2019.', new Date('Dec 5, 2019')],
+        ['The Coddling of the American Mind', 'Greg Lukianoff & Jonathon Haidt', 'Non-Fiction', 'Wish it was fiction. Answers a lot of good questions. Finished Jan 2020.', new Date('Dec 10, 2019')],
+        ['Deciphering the Cosmic Number', 'Arthur Miller', 'Non-Fiction', 'Man Pauli was fucking weird. Jung too. Finished Jan 2020.', new Date('Jan 1, 2020')],
+        ['The Body: A Guide for Occupants', 'Bill Bryson', 'Non-Fiction', 'Vintage Bryson. Very good. Finished Jan 2020.', new Date('Jan 5, 2020')],
+        ['The Joy of x: A Guided Tour of Math, from One to Infinity', 'Steven Strogatz', 'Non-Fiction', 'Vintage Strogatz. Also very good. Finished April 2020.', new Date('Apr 10, 2020')],
+        ['Nicholas and Alexandra', 'Robert Massie', 'Non-Fiction', 'Why did they have to shoot the cocker spaniel? :( Finished Jun 2020', new Date('Jun 1, 2020')],
+        ['Sapiens', 'Yuval Harari', 'Non-Fiction', 'Very good, if a bit speculative. Finished summer 2019 (I think).', new Date('Jun 5, 2020')],
+        ['A Conflict of Visions: Ideological Origins of Political Struggles', 'Thomas Sowell', 'Non-Fiction', 'The best book on political science ever written, if you ask me. Read once a year since 2018.', new Date('Jun 10, 2020')],
+        ['Black Rednecks and White Liberals', 'Thomas Sowell', 'Non-Fiction', 'Very interesting collection of essays. I particuarly like the one on jews being not generic. Finished summer 2020.', new Date('Jul 1, 2020')],
+        ['A Personal Odyssey', 'Thomas Sowell', 'Non-Fiction', 'What an angry, intelligent person. Wish he discussed the writing of CoV more.', new Date('November 24, 2020')],
+        ['Some Remarks', 'Neal Stephenson', 'Non-Fiction', 'Pretty good.', new Date('Jan 10, 2020')],
+        ['Mans Search for Meaning', 'Victor Frankl', 'Non-Fiction', '-', new Date('Jan 15, 2020')],
+        ['A Song of Ice and Fire', 'George RR Martin', 'Fiction', 'Finish the fucking books PLEASE.', new Date('Feb 15, 2020')],
+        ['The Mind of a Mnemonist', 'Alexander Luria', 'Non-Fiction', 'Not bad...I see why Oliver Sacks liked him.', new Date('Feb 20, 2020')],
+        ['Leonardo da Vinci', 'Walter Isaacson', 'Non-Fiction', 'I too cant finish anything I start--am I da Vinci?', new Date('Feb 25, 2020')],
+        ['Enemies: A Love Story', 'Isaac Bashevis Singer', 'Fiction', 'Also very, very good.', new Date('Mar 5, 2020')],
+        ['You Are Not a Gadget: A Manifesto', 'Jaron Lanier', 'Non-Fiction', 'Terrifying and true.', new Date('Mar 10, 2020')],
+        ['The Death of Ivan Ilyich', 'Leo Tolstoy', 'Fiction', 'Oof. Pretty good. Mercifully short.', new Date('Mar 15, 2020')],
+        ['Anthem', 'Ayn Rand', 'Fiction', 'Nice. Wish I had read it when I was 14 though.', new Date('Mar 16, 2020')],
+        ['Love and Math', 'Edward Frenkel', 'Non-Fiction', 'A bit cheesy but nice! We used to shop at the same Starmarket near Harvard.', new Date('Mar 20, 2020')],
+        ['The Road', 'Cormac McCarthy', 'Fiction', 'Crushing.', new Date('Mar 23, 2020')],
+        ['Temple of the Winds', 'Terry Goodkind', 'Fiction', 'Fourth book in the Sword of Truth series. Probably the best one so far, with the exception of maybe book 2.', new Date('Dec 3, 2020')],
+        ['The Art of Doing Science and Engineering', 'Richard W. Hamming', 'Non-Fiction', 'Pretty good. I like the bit about the drunken sailor with bias. Style reminds me of Feynman a bit.', new Date('Dec 7, 2020')],
+        ['Fall, Or, Dodge in Hell', 'Neal Stephenson', 'Fiction', 'The best parts of this book have already probably made a permanent home in my mind somewhere. Like the entire first Dodge became conscious sequence is Special. But oh my god the bad in this book was bad. Stop fucking introducing new characters every 30 pages. Stop spending forever on detours that dont go anywhere. Like, Chekovs gun motherfucker--heard of it?! He struggled with consistency here in the same way he didnt struggle with it in Snow Crash.', new Date('Dec 27, 2020')],
+        ['The Information', 'James Gleik', 'Non-Fiction', 'Nowhere even close to Chaos, but tolerably OK.', new Date('Jan 11, 2021')],
+        ['The Denial of Death', 'Ernest Becker', 'Non-Fiction', 'Very good. Will write longer post about it eventually.', new Date('Jan 24, 2021')],
+        ['The Worm at the Core: On the Role of Death in Life', 'Jeff Greenberg, Sheldon Solomon and Tom Pyszczynski', 'Non-Fiction', 'Interesting experiments inspired by Beckers basic ideas, written by three social psychologists.', new Date('Feb 07, 2021')],
+        ['Models of the Mind', 'Grace Lindsey', 'Non-Fiction', 'Really good history/survey of comp neuro. Particularly enjoyed the discussion around the pitfalls of comp neuro trying to follow in the footsteps of Older Sibling Physics.', new Date('March 19, 2021')],
+        ['An Anthropologist on Mars', 'Oliver Sacks', 'Non-Fiction', 'I can only handle about one Sacks book per year, but I never miss a year. The books eponymous chapter was the best.', new Date('March 27,2021')],
+        ['The Story of the Human Body', 'Daniel E. Lieberman', 'Non-Fiction', 'Book was OK. Really repetitive. One chapter about brain evolution was interesting. Everything was kinda lackluster.', new Date('March 9, 2021')],
+        ['The Spike', 'Mark Humphries', 'Non-Fiction', 'The book did not live up to its grand ambitions. Sometimes it was really good, most of the time it was scattered. It was not clear who the book was written for. Peeled some good references off it, tho.', new Date('April 22,2021')],
+        ['The Best of Issac Asimov', 'Issac Asimov', 'Fiction', 'Ive never been more jealous of anyone, dead or alive.', new Date('May 17,2021')],
+        ['Desert Solitaire', 'Edward Abbey', 'Non-Fiction', 'Only interesting if youve travelled to southeast Utah, which I recently have. Very well written. Shades of Hemmingway style. Suprisingly modern for a book written in 1968.', new Date('June 27,2021')],
+        ['Asassins Apprentice', 'Robin Hobb', 'Fiction', 'Magic system is really cool, love the Skill and Wit. Character building pretty bad. World building really bad. Prose started shitty but got good.', new Date('July 31,2021')],
+        ['The King of The Fields', 'Isaac Bashevis Singer', 'Fiction', 'Reread because this book is amazing and now lives in my heart rent free.', new Date('August 8,2021')],
+        ['Children of Time', 'Adrian Tchaikovsky', 'Fiction', 'Unquestionably the best sci-fi book Ive read in a very long time. Absolutely loved it. ', new Date('Sep 1,2021')],
+        ['Kindly Inquisitors', 'Jonathan Rauch ', 'Non-Fiction', 'An old book on Political Correctness, Cancel Culture, etc. Reads like it could be written tomorrow. Hopefully it wont be. ', new Date('Sep 12,2021')],
+        ['Bad Blood: Secrets and Lies in a Silicon Valley Startup', ' John Carreyrou ', 'Non-Fiction', 'Wow. Great read on a great liar. Like, maybe the best liar Ive ever read about.', new Date('Sep 29,2021')],
+        ['Slaughterhouse Five', ' Kurt Vonnegut ', 'Fiction', 'Its good to periodically reread the best fiction book ever written.', new Date('Oct 5, 2021')],
+        ['A History of the Ancient World', ' Chester Starr ', 'Non-Fiction', 'Only got up to the beginning of Rome, but the parts on early Mesopotamia, Egypt, Cannan, India and China are very good.', new Date('Oct 20, 2021')],
+        ['The Death of Ivan Ilyich', ' Leo Tolstoy', 'Fiction', 'Sometimes you just want to reread a book about a guy avoiding unpleasant things in life until he gets a terminal disease, deteriorates slowly, screams for three consecutive days and then dies.', new Date('Nov 5, 2021')],
+        ['Breath', 'James Nestor', 'Non-Fiction', 'Interesting enough. Felt like I was being sold something the whole time though.', new Date('Nov 11, 2021')],
+        ['Harry Potter Books 1-7', 'JK Rowling', 'Fiction', 'Because sometimes self-care is reading HP from start to finish for the 100th time.', new Date('Jan 16, 2022')],
+        ['The Jews in Literature and Art', 'Sharon R. Keller', 'Non-Fiction', 'Interesting book with lots of pictures, paintings and passages from the long and...storied...history of the Jews.', new Date('Jan 25, 2022')],
+        ['Journey to the Edge of Reason ', 'Stephen Budiansky', 'Non-Fiction', 'The greatest logician since Artistotle died weighing 65 lbs, curled into a fetal position, in an otherwise unimportant room inside Princeton Hospital. ', new Date('Feb 23, 2022')]
+      ])
+        ;
 
-        var view = new google.visualization.DataView(data);
-        view.setRows(data.getSortedRows({column: 4, desc: true}));
-        table.draw(view, options);
 
-        
+      var table = new google.visualization.Table(document.getElementById('table_div'));
 
-
-        
+      var view = new google.visualization.DataView(data);
+      view.setRows(data.getSortedRows({ column: 4, desc: true }));
+      table.draw(view, options);
 
 
-      }
-    </script>
-  </head>
-  <body>
-    <div id="table_div"></div>
-  </body>
+
+
+
+
+
+    }
+  </script>
+</head>
+
+<body>
+  <div id="table_div"></div>
+</body>
+
 </html>
