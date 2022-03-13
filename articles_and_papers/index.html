@@ -85,14 +85,15 @@
 
       data.addColumn('string', 'Title');
       data.addColumn('string', 'Author(s)');
+      data.addColumn('date', 'Date Published');
       data.addColumn('string', 'Subject');
       data.addColumn('string', 'Notes');
       data.addColumn('date', 'Date Read');
 
 
       data.addRows([
-        ['Boltzmanns Atom', 'David Lindley', 'Non-Fiction', 'Very good.', new Date('Jun 1, 2014')],
-        ['Test Article', 'Me et al', 'Neuro', 'Very good.', new Date('March 12, 2022')]
+        ['Bifurcations of Recurrent Neural Networks in Gradient Descent Learning', 'Kenji Doya', new Date('Feb 01, 1993'), 'ML', 'Fundamental.', new Date('March 12, 2022')],
+        ['Pain: A Precision Signal for Reinforcement Learning and Control', 'Ben Seymour', new Date('March 20, 2019'), 'Neuro', 'Not enough comp neuro work on pain.', new Date('March 12, 2022')]
       ])
         ;
 
