@@ -30,11 +30,11 @@ TLDR: We trained a non-human primate on a memory task. Then we recorded from its
 
 Abstract: Working memory has long been thought to arise from sustained spiking/attractor dynamics. However, recent work has suggested that short-term synaptic plasticity (STSP) may help maintain attractor states over gaps in time with little or no spiking. To determine if STSP endows additional functional advantages, we trained artificial recurrent neural networks (RNNs) with and without STSP to perform an object working memory task. We found that RNNs with and without STSP were both able to maintain memories over distractors presented in the middle of the memory delay. However, RNNs with STSP showed activity that was similar to that seen in the cortex of monkeys performing the same task. By contrast, RNNs without STSP showed activity that was less brain-like. Further, RNNs with STSP were more robust to noise and network degradation than RNNs without STSP. These results show that STSP can not only help maintain working memories, it also makes neural networks more robust.
 
-# Recursive Construction of Stable Assemblies of Recurrent Neural Networks (2021)
+# RNNs of RNNs: Recursive Construction of Stable Assemblies of Recurrent Neural Networks (To Appear in NeurIPS 2022)
 
 Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
 
-[[Paper]](https://arxiv.org/abs/2106.08928) [[Open Review]](https://openreview.net/forum?id=qTBC7E4c454)
+[[Paper]](https://arxiv.org/abs/2106.08928)
 
 TLDR: Stability is hard to prove for recurrent neural networks. Even when you do prove it for one network, combining that network with another stable network might mess up all your hard work--the combined network will probably not be stable. We show that for certain stability conditions and combination types, you can avoid this problem--stability will be automatically conserved for the whole 'network of networks'. We show that these stable networks are better than other stable networks at doing stuff. 
 
