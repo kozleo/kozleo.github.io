@@ -10,6 +10,26 @@ tags: math+science
 
 Here is a running list of project I'm working on or have worked on. 
 
+# Building Transformers from Neurons and Astrocytes
+
+Authors: Leo Kozachkov, Ksenia V. Kastanenka, Dmitry Krotov
+
+[[Paper]](https://www.biorxiv.org/content/10.1101/2022.10.12.511910v1) [[Tweeprint]](https://twitter.com/Leokoz8/status/1582055729103769600?s=20&t=PGOl_bJotc9XZkQGvv6Hig)
+
+TLDR: Transformers work amazingly well, but are they--by any stretch of the imagination--models of the brain? Glial cells account for 50%-90% of all human brain cells, but are they--by any stretch of the imagination--participating in cognition and behavior? We show that you can build Transformers out of neurons and astrocytes. Whether or not this actually happens in the brain will require a double stretch of the imagination, and a lot of experimental work. 
+
+Abstract: Glial cells account for roughly 90% of all human brain cells, and serve a variety of important developmental, structural, and metabolic functions. Recent experimental efforts suggest that astrocytes, a type of glial cell, are also directly involved in core cognitive processes such as learning and memory. While it is well-established that astrocytes and neurons are connected to one another in feedback loops across many time scales and spatial scales, there is a gap in understanding the computational role of neuron-astrocyte interactions. To help bridge this gap, we draw on recent advances in artificial intelligence (AI) and astrocyte imaging technology. In particular, we show that neuron-astrocyte networks can naturally perform the core computation of a Transformer, a particularly successful type of AI architecture. In doing so, we provide a concrete and experimentally testable account of neuron-astrocyte communication. Because Transformers are so successful across a wide variety of task domains, such as language, vision, and audition, our analysis may help explain the ubiquity, flexibility, and power of the brain’s neuron-astrocyte networks.
+
+# RNNs of RNNs: Recursive Construction of Stable Assemblies of Recurrent Neural Networks (NeurIPS 2022)
+
+Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
+
+[[Paper]](https://arxiv.org/abs/2106.08928)
+
+TLDR: Stability is hard to prove for recurrent neural networks. Even when you do prove it for one network, combining that network with another stable network might mess up all your hard work--the combined network will probably not be stable. We show that for certain stability conditions and combination types, you can avoid this problem--stability will be automatically conserved for the whole 'network of networks'. We show that these stable networks are better than other stable networks at doing stuff. 
+
+Abstract: Advanced applications of modern machine learning will likely involve combinations of trained networks, as are already used in spectacular systems such as DeepMind's AlphaGo. Recursively building such combinations in an effective and stable fashion while also allowing for continual refinement of the individual networks - as nature does for biological networks - will require new analysis tools. This paper takes a step in this direction by establishing contraction properties of broad classes of nonlinear recurrent networks and neural ODEs, and showing how these quantified properties allow in turn to recursively construct stable networks of networks in a systematic fashion. The results can also be used to stably combine recurrent networks and physical systems with quantified contraction properties. Similarly, they may be applied to modular computational models of cognition. We perform experiments with these combined networks on benchmark sequential tasks (e.g permuted sequential MNIST) to demonstrate their capacity for processing information across a long timescale in a provably stable manner.
+
 # Generalization in Supervised Learning Through Riemannian Contraction (2022)
 
 Authors: Leo Kozachkov, Patrick M. Wensing, Jean-Jacques Slotine
@@ -29,16 +49,6 @@ Authors: Leo Kozachkov, John Tauber, Mikael Lundqvist, Scott Brincat, Jean-Jacqu
 TLDR: We trained a non-human primate on a memory task. Then we recorded from its brain while it did the task. We expected the cells inside its brain to have a lot of 'information' about the item it was remembering. We found that this wasn't true--there wasn't a lot of information in the cells. This was very confusing. Then we trained artificial neural networks on the same task using deep learning and it became less confusing.
 
 Abstract: Working memory has long been thought to arise from sustained spiking/attractor dynamics. However, recent work has suggested that short-term synaptic plasticity (STSP) may help maintain attractor states over gaps in time with little or no spiking. To determine if STSP endows additional functional advantages, we trained artificial recurrent neural networks (RNNs) with and without STSP to perform an object working memory task. We found that RNNs with and without STSP were both able to maintain memories over distractors presented in the middle of the memory delay. However, RNNs with STSP showed activity that was similar to that seen in the cortex of monkeys performing the same task. By contrast, RNNs without STSP showed activity that was less brain-like. Further, RNNs with STSP were more robust to noise and network degradation than RNNs without STSP. These results show that STSP can not only help maintain working memories, it also makes neural networks more robust.
-
-# RNNs of RNNs: Recursive Construction of Stable Assemblies of Recurrent Neural Networks (To Appear in NeurIPS 2022)
-
-Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
-
-[[Paper]](https://arxiv.org/abs/2106.08928)
-
-TLDR: Stability is hard to prove for recurrent neural networks. Even when you do prove it for one network, combining that network with another stable network might mess up all your hard work--the combined network will probably not be stable. We show that for certain stability conditions and combination types, you can avoid this problem--stability will be automatically conserved for the whole 'network of networks'. We show that these stable networks are better than other stable networks at doing stuff. 
-
-Abstract: Advanced applications of modern machine learning will likely involve combinations of trained networks, as are already used in spectacular systems such as DeepMind's AlphaGo. Recursively building such combinations in an effective and stable fashion while also allowing for continual refinement of the individual networks - as nature does for biological networks - will require new analysis tools. This paper takes a step in this direction by establishing contraction properties of broad classes of nonlinear recurrent networks and neural ODEs, and showing how these quantified properties allow in turn to recursively construct stable networks of networks in a systematic fashion. The results can also be used to stably combine recurrent networks and physical systems with quantified contraction properties. Similarly, they may be applied to modular computational models of cognition. We perform experiments with these combined networks on benchmark sequential tasks (e.g permuted sequential MNIST) to demonstrate their capacity for processing information across a long timescale in a provably stable manner.
 
 # Achieving Stable Dynamics in Neural Circuits (2020)
 
