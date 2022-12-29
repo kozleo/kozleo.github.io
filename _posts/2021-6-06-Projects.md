@@ -24,7 +24,7 @@ Abstract: Glial cells account for roughly 90% of all human brain cells, and serv
 
 Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
 
-[[Paper]](https://openreview.net/forum?id=2dgB38geVEU)[[Tweeprint]](https://twitter.com/Leokoz8/status/1590037169158361088?s=20&t=v64v6DPXEpZU0xnuGvn-MQ) [[Presentatio]](https://neurips.cc/virtual/2022/poster/53104)
+[[Paper]](https://openreview.net/forum?id=2dgB38geVEU)[[Tweeprint]](https://twitter.com/Leokoz8/status/1590037169158361088?s=20&t=v64v6DPXEpZU0xnuGvn-MQ) [[Presentation]](https://neurips.cc/virtual/2022/poster/53104)
 
 TLDR: Stability is hard to prove for recurrent neural networks. Even when you do prove it for one network, combining that network with another stable network might mess up all your hard work--the combined network will probably not be stable. We show that for certain stability conditions and combination types, you can avoid this problem--stability will be automatically conserved for the whole 'network of networks'. We show that these stable networks are better than other stable networks at doing stuff. 
 
