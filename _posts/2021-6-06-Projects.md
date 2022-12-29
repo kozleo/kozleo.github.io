@@ -24,7 +24,7 @@ Abstract: Glial cells account for roughly 90% of all human brain cells, and serv
 
 Authors: Leo Kozachkov, Michaela Ennis, Jean-Jacques Slotine
 
-[[Paper]](https://arxiv.org/abs/2106.08928)
+[[Paper]](https://openreview.net/forum?id=2dgB38geVEU)[[Tweeprint]](https://twitter.com/Leokoz8/status/1590037169158361088?s=20&t=v64v6DPXEpZU0xnuGvn-MQ) [[Presentatio]](https://neurips.cc/virtual/2022/poster/53104)
 
 TLDR: Stability is hard to prove for recurrent neural networks. Even when you do prove it for one network, combining that network with another stable network might mess up all your hard work--the combined network will probably not be stable. We show that for certain stability conditions and combination types, you can avoid this problem--stability will be automatically conserved for the whole 'network of networks'. We show that these stable networks are better than other stable networks at doing stuff. 
 
@@ -44,7 +44,7 @@ Abstract: We prove that Riemannian contraction in a supervised learning setting 
 
 Authors: Leo Kozachkov, John Tauber, Mikael Lundqvist, Scott Brincat, Jean-Jacques Slotine, Earl K. Miller
 
-[[Paper]](https://www.biorxiv.org/content/10.1101/2022.01.09.475558v1) [[Talk]](https://www.youtube.com/watch?v=xmC8CqSaZeg)
+[[Paper]](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010776)[[Press]](https://picower.mit.edu/news/holding-information-mind-may-mean-storing-it-among-synapses?utm_medium=email&utm_campaign=New%20Publication%20Miller%20Lab%2012292023%20copy&utm_content=New%20Publication%20Miller%20Lab%2012292023%20copy+CID_39510500d5680a2318eace27c28d2f00&utm_source=Picower%20Campaign%20Monitor&utm_term=Story%20continues)
 
 TLDR: We trained a non-human primate on a memory task. Then we recorded from its brain while it did the task. We expected the cells inside its brain to have a lot of 'information' about the item it was remembering. We found that this wasn't true--there wasn't a lot of information in the cells. This was very confusing. Then we trained artificial neural networks on the same task using deep learning and it became less confusing.
 
