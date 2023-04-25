@@ -10,6 +10,16 @@ tags: math+science
 
 Here is a running list of project I'm working on or have worked on. 
 
+# Generalization as Dynamical Robustness--The Role of Riemannian Contraction in Supervised Learning (TMLR 2023)
+
+Authors: Leo Kozachkov, Patrick M. Wensing, Jean-Jacques Slotine
+
+[[Paper]](https://openreview.net/forum?id=Sb6p5mcefw)
+
+TLDR: Training a model with an iterative optimizer (e.g, gradient descent) can be thought of as running a dynamical system on the parameter space of your model. We show that if this dynamical system is stable, then adding more datapoints to your training set reduces the [generalization error](https://en.wikipedia.org/wiki/Generalization_error). 
+
+
+
 # Building Transformers from Neurons and Astrocytes
 
 Authors: Leo Kozachkov, Ksenia V. Kastanenka, Dmitry Krotov
@@ -30,17 +40,10 @@ TLDR: Stability is hard to prove for recurrent neural networks. Even when you do
 
 Abstract: Advanced applications of modern machine learning will likely involve combinations of trained networks, as are already used in spectacular systems such as DeepMind's AlphaGo. Recursively building such combinations in an effective and stable fashion while also allowing for continual refinement of the individual networks - as nature does for biological networks - will require new analysis tools. This paper takes a step in this direction by establishing contraction properties of broad classes of nonlinear recurrent networks and neural ODEs, and showing how these quantified properties allow in turn to recursively construct stable networks of networks in a systematic fashion. The results can also be used to stably combine recurrent networks and physical systems with quantified contraction properties. Similarly, they may be applied to modular computational models of cognition. We perform experiments with these combined networks on benchmark sequential tasks (e.g permuted sequential MNIST) to demonstrate their capacity for processing information across a long timescale in a provably stable manner.
 
-# Generalization in Supervised Learning Through Riemannian Contraction (2022)
 
-Authors: Leo Kozachkov, Patrick M. Wensing, Jean-Jacques Slotine
 
-[[Paper]](https://arxiv.org/pdf/2201.06656.pdf)
 
-TLDR: Training a model with an iterative optimizer (e.g, gradient descent) can be thought of as running a dynamical system on the parameter space of your model. We show that if this dynamical system is stable, then adding more datapoints to your training set reduces the [generalization error](https://en.wikipedia.org/wiki/Generalization_error). 
-
-Abstract: We prove that Riemannian contraction in a supervised learning setting implies generalization. Specifically, we show that if an optimizer is contracting in some Riemannian metric with rate $$\lambda > 0$$, it is uniformly algorithmically stable with rate $$\mathcal{O}(1/\lambda n)$$, where $$n$$ is the number of labelled examples in the training set. The results hold for stochastic and deterministic optimization, in both continuous and discrete-time, for convex and non-convex loss surfaces. The associated generalization bounds reduce to well-known results in the particular case of gradient descent over convex or strongly convex loss surfaces. They can be shown to be optimal in  certain linear settings, such as kernel ridge regression under gradient flow.
-
-# Robust Working Memory through Short-Term Synaptic Plasticity (2022)
+# Robust Working Memory through Short-Term Synaptic Plasticity (PLOS Comp Bio 2022)
 
 Authors: Leo Kozachkov, John Tauber, Mikael Lundqvist, Scott Brincat, Jean-Jacques Slotine, Earl K. Miller
 
@@ -50,7 +53,7 @@ TLDR: We trained a non-human primate on a memory task. Then we recorded from its
 
 Abstract: Working memory has long been thought to arise from sustained spiking/attractor dynamics. However, recent work has suggested that short-term synaptic plasticity (STSP) may help maintain attractor states over gaps in time with little or no spiking. To determine if STSP endows additional functional advantages, we trained artificial recurrent neural networks (RNNs) with and without STSP to perform an object working memory task. We found that RNNs with and without STSP were both able to maintain memories over distractors presented in the middle of the memory delay. However, RNNs with STSP showed activity that was similar to that seen in the cortex of monkeys performing the same task. By contrast, RNNs without STSP showed activity that was less brain-like. Further, RNNs with STSP were more robust to noise and network degradation than RNNs without STSP. These results show that STSP can not only help maintain working memories, it also makes neural networks more robust.
 
-# Achieving Stable Dynamics in Neural Circuits (2020)
+# Achieving Stable Dynamics in Neural Circuits (PLOS Comp Bio 2020)
 
 Authors: Leo Kozachkov, Mikael Lundqvist, Jean-Jacques Slotine, Earl K. Miller
 
